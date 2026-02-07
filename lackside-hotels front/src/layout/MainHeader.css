@@ -1,0 +1,55 @@
+.header-banner {
+  position: relative;
+  height: 90vh;
+  min-height: 500px;
+
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(97, 94, 94, 0.55)
+    ),
+    url("/background-image.avif"); /* FIXED PATH */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 2;
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.overlay-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.overlay-content h4 {
+  color: #e9ecef;
+}
+
+.hotel-color {
+  color: #0d6efd;
+}
